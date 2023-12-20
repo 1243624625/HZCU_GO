@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+      "l-Tabs": "/miniprogram_npm/lin-ui/tabs/index",
+      "l-Tabpanel": "/miniprogram_npm/lin-ui/tabpanel/index",
+      "l-input": "/miniprogram_npm/lin-ui/input/index",
+      "l-segment": "/miniprogram_npm/lin-ui/segment/index",
+      "l-segmentitem": "/miniprogram_npm/lin-ui/segment-item/index",
+      "l-button": "/miniprogram_npm/lin-ui/button/index",
+      "l-card": "/components/l-card/l-card",
+      "l-water-flow": "/miniprogram_npm/lin-ui/water-flow/index"
+  }
+}

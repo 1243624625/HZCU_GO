@@ -1,0 +1,85 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/self/self",
+        "pages/map/map",
+        "pages/lo_summary/lo_summary",
+        "pages/lo_ranking/lo_ranking",
+        "pages/message/message"
+    ],
+    "subpackages": [{
+        "root": "packageA",
+        "pages": [
+            "pages/intro/intro",
+            "pages/place_page/place_page"
+        ]
+    }, {
+        "root": "package_Admin",
+        "pages": [
+            "pages/login/login"
+        ]
+    }],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#73a5d6",
+        "navigationBarTitleText": "城院在哪里",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "rendererOptions": {
+        "skyline": {
+            "defaultDisplayBlock": true,
+            "disableABTest": true,
+            "sdkVersionBegin": "3.0.0",
+            "sdkVersionEnd": "15.255.255"
+        }
+    },
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [{
+                "selectedIconPath": "/images/tabBar/ditu1.png",
+                "iconPath": "/images/tabBar/ditu.png",
+                "pagePath": "pages/map/map",
+                "text": "地图"
+            },
+            {
+                "selectedIconPath": "/images/tabBar/navicon-qghztj1.png",
+                "iconPath": "/images/tabBar/navicon-qghztj.png",
+                "pagePath": "pages/lo_summary/lo_summary",
+                "text": "地点汇总"
+            },
+            {
+                "selectedIconPath": "/images/tabBar/31paixingbang1.png",
+                "iconPath": "/images/tabBar/31paixingbang.png",
+                "pagePath": "pages/lo_ranking/lo_ranking",
+                "text": "搜索排行"
+            },
+            {
+                "selectedIconPath": "/images/tabBar/xinxi1.png",
+                "iconPath": "/images/tabBar/xinxi.png",
+                "pagePath": "pages/message/message",
+                "text": "校园信息"
+            },
+            {
+                "selectedIconPath": "/images/tabBar/iconwodeyemian1.png",
+                "iconPath": "/images/tabBar/iconwodeyemian.png",
+                "pagePath": "pages/self/self",
+                "text": "个人中心"
+            }
+        ]
+    },
+    "plugins": {
+      "routePlan": {
+      "version": "1.0.18",
+      "provider": "wx50b5593e81dd937a"
+      }
+    },
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序定位"
+      }
+    },
+    "useExtendedLib":{
+      "weui":true
+    }
+}

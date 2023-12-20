@@ -1,0 +1,43 @@
+<!--pages/map/map.wxml-->
+<view style="width:100%;height:100%">
+  <view class="search-bar-container">
+    <view class="search-button">
+      <button bindtap="onSearchTap">
+        <image src="../../images/icon/搜索_填充.png" style="width: 24px; height: 24px;"></image>
+      </button>
+    </view>
+
+    <scroll-view class="tabs-scroll-view" scroll-x="true">
+      <view class="tabs">
+        <view wx:for="{{tabList}}" wx:key="{{item}}" bindtap="onTabTap" data-category="{{item}}" class="tab {{item === activeCategory ? 'active' : ''}}">{{item}}</view>
+      </view>
+    </scroll-view>
+
+    <view class="category-button">
+      <button bindtap="onCategoryTap">
+        <image src="../../images/icon/目录采集.png" style="width: 24px; height: 24px;"></image>
+      </button>
+    </view>
+  </view>
+
+  <view wx:if="{{showAllCategories}}" class="category-container">
+  <view class="tabs">
+    <view wx:for="{{tabList}}" wx:key="{{index}}" data-category="{{item}}" class="tab {{item === activeCategory ? 'active' : ''}}" bindtap="onTabTap">{{item}}</view>
+  </view>
+</view>
+
+
+
+  <map id="map" subKey="{{subKey}}" style="width:100%;height:100%" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{17}}" markers="{{markers}}" circles="{{circle}}" polylines="{{polylines}}" enable-3D="{{enable3d}}" show-location="{{showLocation}}" enable-zoom="{{enableZoom}}" enable-rotate="{{enableRotate}}" enable-satellite="{{enableSatellite}}" enable-traffic="{{enableTraffic}}" enable-overlooking="{{enableOverlooking}}" enable-scroll="{{enableScroll}}" bindmarkertap="handleMarkerTap">
+  </map>
+  <mp-halfScreenDialog show="{{showDialog}}">
+        <view slot="title">{{currentMarker.name}}</view>
+        <view slot="desc"></view>
+       <view slot="footer" class="button-container">
+      <button type="primary" class="weui-btn" bindtap="navi1">App导航</button>
+      <button type="primary" class="weui-btn" bindtap="navi2">插件导航</button>
+    </view>
+
+      </mp-halfScreenDialog>
+
+</view>

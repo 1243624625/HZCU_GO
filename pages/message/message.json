@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "l-NoticeBar": "/miniprogram_npm/lin-ui/notice-bar/index",
+        "l-icon": "/miniprogram_npm/lin-ui/icon/index",
+        "l-Grid": "/miniprogram_npm/lin-ui/grid/index",
+        "l-Grid-item": "/miniprogram_npm/lin-ui/grid-item/index"
+    },
+    "navigationBarTitleText": "校园信息"
+}

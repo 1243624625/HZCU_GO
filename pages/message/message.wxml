@@ -1,0 +1,101 @@
+<!--pages/message/message.wxml-->
+<view style="height: 100%;">
+  <view class="message">
+    <!-- 图片轮播 -->
+    <swiper class="class_view" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view>
+            <image lazy-load="{{ true }}" src="{{item}}" class="swiper-item-image" mode="widthFix" bindload="imgHeight" />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="school_info">
+      <image src="/images/school_info/xiaohui.jpg" mode="widthFix" />
+    </view>
+    <view class="component">
+      <view class="laba">
+        <l-icon name="notification" class="notice"></l-icon>
+        <l-NoticeBar type="still">欢迎使用浙大城市学院导航小程序</l-NoticeBar>
+      </view>
+      <scroll-view class="comp_list" scroll-y>
+        <l-Grid show-border="true" l-class="grid">
+          <l-Grid-item key="one" slot="one">
+            <l-icon name="phone"></l-icon>
+            部门联络电话
+          </l-Grid-item>
+          <l-Grid-item key="two" slot="two">
+            <l-icon name="address"></l-icon>
+            交通出行
+          </l-Grid-item>
+          <l-Grid-item key="three" slot="three">
+            <l-icon name="time"></l-icon>
+            校园最新鲜
+          </l-Grid-item>
+        </l-Grid>
+      </scroll-view>
+      <view class="wechat_aacount">各学院官方公众号</view>
+      <scroll-view class="account_list_scroll" scroll-x>
+        <view class="account_list">
+          <view class="account" bind:tap="jisuan">
+            <image src="/images/college_info/jisuan.png" mode="" class="account_image"/>
+            <text>计算学院</text>
+          </view>
+          <view class="account" bind:tap="xinchuan">
+            <image src="/images/college_info/xinchuan.jpg" mode="" class="account_image"/>
+            <text>新传学院</text>
+          </view>
+          <view class="account" bind:tap="waiguoyu">
+            <image src="/images/college_info/waiguoyu.jpg" mode="" class="account_image"/>
+            <text>外国语学院</text>
+          </view>
+          <view class="account" bind:tap="xindian">
+            <image src="/images/college_info/xindian.jpg" mode="" class="account_image"/>
+            <text>信电学院</text>
+          </view>
+          <view class="account" bind:tap="faxue">
+            <image src="/images/college_info/faxue.jpg" mode="" class="account_image"/>
+            <text>法学院</text>
+          </view>
+          <view class="account" bind:tap="guotu">
+            <image src="/images/college_info/guotu.jpg" mode="" class="account_image"/>
+            <text>国土学院</text>
+          </view>
+          <view class="account" bind:tap="chuangye">
+            <image src="/images/college_info/chuangye.jpg" mode="" class="account_image"/>
+            <text>创业学院</text>
+          </view>
+          <view class="account" bind:tap="guolv">
+            <image src="/images/college_info/guolv.jpg" mode="" class="account_image"/>
+            <text>国旅学院</text>
+          </view>
+          <view class="account" bind:tap="renwen">
+            <image src="/images/college_info/renwen.jpg" mode="" class="account_image"/>
+            <text>人文学院</text>
+          </view>
+          <view class="account" bind:tap="UW">
+            <image src="/images/college_info/UW.jpg" mode="" class="account_image"/>
+            <text>uw学院</text>
+          </view>
+          <view class="account" bind:tap="gongcheng">
+            <image src="/images/college_info/gongcheng.jpg" mode="" class="account_image"/>
+            <text>工程学院</text>
+          </view>
+          <view class="account" bind:tap="yixue">
+            <image src="/images/college_info/yixue.jpg" mode="" class="account_image"/>
+            <text>医学院</text>
+          </view>
+          <view class="account" bind:tap="yigu">
+            <image src="/images/college_info/yigu.jpg" mode="" class="account_image"/>
+            <text>艺古学院</text>
+          </view>
+          <view class="account" bind:tap="shang">
+            <image src="/images/college_info/shang.jpg" mode="" class="account_image"/>
+            <text>商学院</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

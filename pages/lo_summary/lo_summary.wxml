@@ -1,0 +1,72 @@
+<!--pages/lo_summary/lo_summary.wxml-->
+<view class="main">
+    <view class="head_container">
+        <l-segment height="100" bind:linchange="changeTabs">
+            <l-segmentitem tab="教学办公" key="1" />
+            <l-segmentitem tab="校园生活" key="2" />
+            <l-segmentitem tab="宝藏空间" key="3" />
+        </l-segment>
+    </view>
+    <view class="bottom_container">
+        <view class="left_container" >
+            <l-segment placement="left" width="100%" height="100%" item-height="100" scrollable="true" wx:if="{{currentTopTab == '1'}}" >
+                <l-segmentitem tab="计算学院" key="1" />
+                <l-segmentitem tab="考古学院" key="2" />
+                <l-segmentitem tab="法学院" key="3" />
+                <l-segmentitem tab="信电学院" key="4" />
+                <l-segmentitem tab="创业学院" key="5" />
+                <l-segmentitem tab="uw学院" key="6" />
+                <l-segmentitem tab="人文学院" key="7" />
+                <l-segmentitem tab="工程学院" key="8" />
+                <l-segmentitem tab="医学院" key="9" />
+                <l-segmentitem tab="国土学院" key="10" />
+                <l-segmentitem tab="外国语学院" key="11" />
+                <l-segmentitem tab="国旅学院" key="12" />
+                <l-segmentitem tab="新传学院" key="13" />
+            </l-segment>
+            <l-segment placement="left" width="100%" height="100%" item-height="100" scrollable="true" wx:if="{{currentTopTab == '2'}}">
+                <l-segmentitem tab="美食汇" key="1" />
+                <l-segmentitem tab="超市便民" key="2" />
+                <l-segmentitem tab="学生宿舍" key="3" />
+                <l-segmentitem tab="教师宿舍" key="4" />
+                <l-segmentitem tab="体育场馆" key="5" />
+                <l-segmentitem tab="风景名胜" key="6" />
+                <l-segmentitem tab="医务室" key="7" />
+                <l-segmentitem tab="" key="8" />
+                <l-segmentitem tab="" key="9" />
+                <l-segmentitem tab="" key="10" />
+                <l-segmentitem tab="" key="11" />
+                <l-segmentitem tab="" key="12" />
+                <l-segmentitem tab="" key="13" />
+            </l-segment>
+            <l-segment placement="left" width="100%" height="100%" item-height="100" scrollable="true" wx:if="{{currentTopTab == '3'}}">
+                <l-segmentitem tab="自修空间" key="1" />
+                <l-segmentitem tab="练琴胜地" key="2" />
+                <l-segmentitem tab="喝茶一隅" key="3" />
+                <l-segmentitem tab="不知道" key="4" />
+                <l-segmentitem tab="再说" key="5" />
+                <l-segmentitem tab="乱造" key="6" />
+                <l-segmentitem tab="无语" key="7" />
+                <l-segmentitem tab="" key="8" />
+                <l-segmentitem tab="" key="9" />
+                <l-segmentitem tab="" key="10" />
+                <l-segmentitem tab="" key="11" />
+                <l-segmentitem tab="" key="12" />
+                <l-segmentitem tab="" key="13" />
+            </l-segment>
+        </view>
+        <view class="right_container">
+            <view class="choose_header">
+                <l-input placeholder="请输入搜索关键字" hideLabel="true" type="text" clear="true" >
+                    <l-button slot="right" size="mini" shape="circle" icon="research" icon-color="#fff" 
+                    icon-size="20" bg-color="#73a5d6">
+                        搜索
+                    </l-button>
+                </l-input>
+            </view>
+            <view class="choose_list">
+                <l-water-flow generic:l-water-flow-item="l-card" />
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,48 @@
+<!--pages/lo_ranking/lo_ranking.wxml-->
+<view>
+    <view class="title-background">
+        <image src="https://cdnjson.com/images/2023/12/10/hzcu2.jpg" class="background-image"></image>
+    </view>
+    <view class="title-background2">
+    <image src="https://cdnjson.com/images/2023/12/10/7B3NRMPIYM5H4FIGHOT8.gif" class="background-image2"></image>
+    </view>
+    <view class="title">
+        <view class="title-1">
+          排行榜单
+        </view>
+        <view class="title-2">
+            当前分区：
+            <picker mode="selector" value="{{index}}" range="{{zones}}" bindchange="onPickerChange" class="picker-small">
+            <view class="picker-display">{{zones[index]}}</view>
+        </picker>
+        </view>
+
+    </view>
+
+
+    <view class="list">
+        <view class="list-title">
+            <view class="list-title-left">排名</view>
+            <view class="list-title-middle">地点</view>
+            <view class="list-title-right">浏览次数</view>
+            <view class="list-title-rightturn"></view>
+        </view>
+        <view class="list-result" wx:for="{{list}}" wx:key="*this" data-s_id="{{item.s_id}}" >
+            <view class="list-result-left" bindtap="handlePartTabInfo" data-item = "{{item}}" >
+                <view>{{index+1}}</view>
+            </view>
+            <view class="list-result-middle">
+                <view>{{item.name}}</view>
+                <view class="list-result-mid2">{{item.aliases}}</view>
+            </view>
+            <view class="list-result-right">
+                {{item.browse}}
+            </view>
+            <l-icon class="list-right-turn" name="backward" size="35" bindtap="onGetSiteDataTap" data-item = "{{item}}" />
+            
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="bottom-text">依据用户搜索浏览行为统计数据可能略有偏差</view>
+    </view>
+</view>

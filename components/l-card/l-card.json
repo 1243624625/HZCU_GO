@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "l-cardLin": "/miniprogram_npm/lin-ui/card/index" 
+    }
+}

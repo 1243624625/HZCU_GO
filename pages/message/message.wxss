@@ -1,0 +1,90 @@
+/* pages/message/message.wxss */
+@import "../../utils/util.wxss";
+page {
+    height: 100%;
+}
+
+.message {
+    height: 100%;
+    background: linear-gradient(to bottom, #dfe6e9, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.class_view {
+    height: 30%;
+    width: 95%;
+    margin-top: 20rpx;
+    border-radius: 20rpx;
+}
+
+.swiper-item-image {
+    width: 100%;
+}
+
+.school_info {
+    width: 70%;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.component {
+    width: 95%;
+    height: 420rpx;
+}
+
+.laba {
+    width: 100%;
+    height:55rpx;
+    display: flex;
+    align-items: center;
+}
+
+.notice {
+    width:5%;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    height: 80%;
+}
+
+.comp_list {
+    width: 100%;
+    height:260rpx;
+}
+
+.grid {
+    width:100%;
+    height: 100%;
+}
+
+.wechat_aacount {
+    color: rgb(54, 145, 182)
+
+}
+
+.account_list_scroll{
+  width:100%;
+  height: 230rpx;
+}
+
+.account_list {
+    width: 2800rpx;
+    height:230rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.account{
+    width:180rpx;
+    height:220rpx;
+    text-align: center;
+}
+
+.account_image{
+    width: 150rpx; 
+    height: 150rpx;
+    /*border: 1rpx solid red;*/
+}

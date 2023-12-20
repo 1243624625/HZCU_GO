@@ -1,0 +1,61 @@
+<!--pages/self/self.wxml-->
+<view style="height: 100%;">
+    <view class="my">
+        <view class="head">
+            <view class="headcard">
+                <view class="headcard_list">
+                    <view class="center_image">
+                        <image src="{{useravatar}}" mode="" class="user_avatar"/>
+                    </view>
+                    <view class="center_info">
+                        <view class="user_name">{{nickName}}</view>
+                        <view class="welcome">欢迎使用城院在哪里小程序</view>
+                    </view>
+                </view>
+                <view class="righticon" ></view>
+            </view>
+        </view>
+        <view class="menu">
+            <view bindtap="backhome" class="menu_row">
+                <image src="/images/icon/home.png" style="height:60rpx;width:60rpx;margin-left:30rpx;"/>
+                <view style="margin-left:10rpx;">回到首页</view>
+                <image src="/images/icon/youjiantou.png" mode="" style="height:40rpx;width:40rpx;margin-left:auto;margin-right:10px"/>
+            </view>
+            <view bindtap="talkabout" class="menu_row">
+                <image src="/images/icon/notification.png" style="height:60rpx;width:60rpx;margin-left:30rpx;"/>
+                <view style="margin-left:10rpx;">软件声明</view>
+                <image src="/images/icon/youjiantou.png" mode="" style="height:40rpx;width:40rpx;margin-left:auto;margin-right:10px"/>
+            </view>
+            <view bindtap="mymessage" class="menu_row">
+                <image src="/images/icon/message.png" style="height:60rpx;width:60rpx;margin-left:30rpx;"/>
+                <view style="margin-left:10rpx;">我的消息</view>
+                <image src="/images/icon/youjiantou.png" mode="" style="height:40rpx;width:40rpx;margin-left:auto;margin-right:10px"/>
+            </view>
+            <view bindtap="backhome" class="menu_row">
+                <image src="/images/icon/edit.png" style="height:60rpx;width:60rpx;margin-left:30rpx;"/>
+                <view style="margin-left:10rpx;">意见反馈</view>
+                <image src="/images/icon/youjiantou.png" mode="" style="height:40rpx;width:40rpx;margin-left:auto;margin-right:10px"/>
+            </view>
+            <view bindtap="backhome" class="menu_row">
+                <image src="/images/icon/money-collect.png" style="height:60rpx;width:60rpx;margin-left:30rpx;"/>
+                <view style="margin-left:10rpx;">支持一下</view>
+                <image src="/images/icon/youjiantou.png" mode="" style="height:40rpx;width:40rpx;margin-left:auto;margin-right:10px"/>
+            </view>
+            <view bindtap="onShareAppMessage" class="menu_row">
+                <image src="/images/icon/like.png" style="height:60rpx;width:60rpx;margin-left:30rpx;"/>
+                <view style="margin-left:10rpx;">推荐给好友</view>
+                <image src="/images/icon/youjiantou.png" mode="" style="height:40rpx;width:40rpx;margin-left:auto;margin-right:10px"/>
+            </view>
+            <view bindtap="control" class="menu_row">
+                <image src="/images/icon/setting.png" style="height:60rpx;width:60rpx;margin-left:30rpx;"/>
+                <view style="margin-left:10rpx;">系统管理</view>
+                <image src="/images/icon/youjiantou.png" style="height:40rpx;width:40rpx;margin-left:auto;margin-right:10px"/>
+            </view>
+                <button class="U-login" bindtap="getUserProfile" >登陆</button>
+            
+        </view>
+        <view class="foot">
+            <text decode="{{true}}">{{miniprogram_name}}&ensp;|&ensp;版权归开发者所有</text>
+        </view>
+    </view>
+</view>

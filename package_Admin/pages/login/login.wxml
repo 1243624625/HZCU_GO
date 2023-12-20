@@ -1,0 +1,35 @@
+<view class="main">
+
+    <view class="login_shadow">
+
+        <view class="icon">
+            <l-icon name="setting" color="green" size="120">
+            </l-icon>
+        </view>
+        <view class="hint">后台管理系统</view>
+
+        <view class="form-group">
+            <view class="title">账号：</view>
+            <input placeholder="请输入管理员账号" maxlength="30" placeholder-class="phc" model:value="{{name}}"></input>
+        </view>
+
+        <view class="form-group">
+            <view class="title">密码：</view>
+            <input placeholder="请输入管理员密码" maxlength="30" type="password" placeholder-class="phc" model:value="{{pwd}}"></input>
+        </view>
+
+        <button class="btn" bindtap="bindLoginTap">点击登录</button>
+        <view class="describe">本系统仅限于系统管理员登录</view>
+        <view bindtap="bindBackTap" class="return">
+            <l-icon name="left" color="#818080" size="23"></l-icon>
+        返回用户端
+        </view>
+
+
+    </view>
+
+    <view class="foot-bottom">
+        <cmpt-foot />
+    </view>
+
+</view>

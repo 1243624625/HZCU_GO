@@ -1,0 +1,41 @@
+/* pages/lo_summary/lo_summary.wxss */
+page{
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.head_container {
+    width: 100%;
+    height: 8%;
+}
+
+.bottom_container {
+    width: 100%;
+    height: 92%;
+    display: flex;
+}
+
+.left_container {
+    height: 100%;
+    width: 20%;
+}
+
+.right_container {
+    height: 100%;
+    width: 80%;
+}
+
+.choose_header {
+    height: 10%;
+    width: 100%;
+}
+
+.choose_list {
+    height: 90%;
+    width: 100%;
+}

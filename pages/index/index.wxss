@@ -1,0 +1,61 @@
+/* pages/index/index.wxss */
+page {
+    height: 100%;
+}
+
+.school_view {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://6f75-our-7gkst71offd1baef-1320228167.tcb.qcloud.la/images/school_info/index_view.png?sign=4c2966cb81cd09cb7a6fec006e735d6f&t=1702873778");
+    background-size: cover;/*确保图像完全适应容器*/
+    display: flex;
+    justify-content: center;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin-top: 320rpx;
+}
+
+.list-container {
+    height: 80px;
+    width: 200px;
+    background-color: #009a4470;
+    margin-top: 10px;
+    /* #73a5d6  #4d9656
+    深蓝 #4782bb
+    深绿 #166a1f
+    绿 #009a44
+    透明度：直接在颜色值后面书写透明度，比如#4782bb90 */
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.list-container-icon1 {
+    width: 40px;
+    height: 40px;
+}
+.list-container-font1 {
+    font-size: 22px;
+}
+
+.list-container-font2 {
+    text-align: right;
+    font-size: 12px;
+}
+
+.list-container-icon2 {
+    width: 20px;
+    height: 20px;
+}
+
+

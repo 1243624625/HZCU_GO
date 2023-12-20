@@ -1,0 +1,92 @@
+/* pages/map/map.wxss */
+
+page {
+  overflow-y: hidden; /* 禁止页面的垂直滚动 */
+  height: 100%;
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* 水平居中按钮 */
+  align-items: center; /* 垂直居中按钮 */
+  flex-wrap: nowrap; /* 防止按钮换行 */
+}
+
+.weui-btn {
+  margin: 0 10px; /* 为按钮添加一些水平间距 */
+}
+
+
+
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* 搜索图标和分类图标两端对齐 */
+  align-items: center;
+  padding: 5px;
+}
+
+
+
+.tabs-scroll-view {
+  flex: 1;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tab {
+  display: inline-block;
+  margin: 0 3px;
+  padding: 10px 15px;
+}
+
+.tab.active {
+  background-color: #5fbd9d;
+  color: white;
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px; /* 设置按钮的宽度 */
+  height: 48px; /* 设置按钮的高度，确保和宽度一致形成正方形 */
+}
+
+.search-button button {
+  width: 100%; /* 按钮宽度填充整个.search-button容器 */
+  height: 100%; /* 按钮高度填充整个.search-button容器 */
+  padding: 0; /* 清除内边距，确保内容能居中 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button image {
+  margin: 0; /* 确保图标周围没有外边距，以避免任何偏移 */
+}
+
+.category-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px; /* 设置按钮的宽度 */
+  height: 48px; /* 设置按钮的高度，确保和宽度一致形成正方形 */
+}
+
+.category-button button {
+  width: 100%; /* 按钮宽度填充整个.category-button容器 */
+  height: 100%; /* 按钮高度填充整个.category-button容器 */
+  padding: 0; /* 清除内边距，确保内容能居中 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-button image {
+  margin: 0; /* 确保图标周围没有外边距，以避免任何偏移 */
+}
+
+
+
+
+
